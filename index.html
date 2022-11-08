@@ -46,7 +46,7 @@
     <section class="hero">
         <div class="content-center">
             <h1 class="hero-title">Ефективні рішення для</br>вашого бізнесу</h1>
-            <button type="button" class="button">Замовити послугу</button>
+            <button type="button" class="button" data-modal-open>Замовити послугу</button>
         </div>
     </section>
 
@@ -102,9 +102,18 @@
        <div class="container">
         <h2 class="section-title">Чим ми займаємося</h2>
         <ul class="work">
-            <li class="item"><img src="images/photo1.jpg" alt="Десктопні додатки" width="370"></li>
-            <li class="item"><img src="images/photo2.jpg" alt="Мобільні додатки" width="370"></li>
-            <li class="item"><img src="images/photo3.jpg" alt="Дизайнерські рішення" width="370"></li>
+            <li class="item">
+                <img src="images/photo1.jpg" alt="Десктопні додатки" width="370">
+                <p class="description">ДЕСКТОПНІ ДОДАТКИ</p>
+            </li>
+            <li class="item">
+                <img src="images/photo2.jpg" alt="Мобільні додатки" width="370">
+                <p class="description">МОБІЛЬНІ ДОДАТКИ</p>
+            </li>
+            <li class="item">
+                <img src="images/photo3.jpg" alt="Дизайнерські рішення" width="370">
+                <p class="description">ДИЗАЙНЕРСЬКІ РІШЕННЯ</p>
+            </li>
         </ul>
        </div>
     </section>
@@ -375,6 +384,20 @@
    </div>
     </div>
 </footer>
+
+<!-- modal window -->
+
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="button-close" data-modal-close>
+            <svg class="icon-close" width="11" height="11">
+                <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script src="./modal.js"></script>
 
 </body>
 </html>
